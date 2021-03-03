@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+			<!--This is the main section -->
+		<section id="html-forms" class="main-section">
+			<!--Method being used is the "get" method in order to secure the information. -->
+		<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+		<!--This is the First name label and section. -->
+			<label for="FirstName">First Name</label>
+		<!--First name is required, meaning users must submit a first name. -->
+<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here" required>
+	</div>
+	<div id="ln-container" class="form-elm">
+		<!--This is the last name label and section. -->
+		<label for="LastName">Last Name</label>
+		<!--The last name section is a text section and it is required. -->
+		<input type="text" name="LastName" id="LastName" placeholder="Last name goes here" required>
+	</div>
+	<div id="email-container" class="form-elm">
+		<label for="email">Email</label>
+		<!--The email section has an email type to ensure the emails that are entered are valid. This section is required for form to be submitted -->
+	<input type="email" name="email" id="email" placeholder="ex. email@email.com" required>
+</div>
+		<div id="pass-container" class="form-elm">
+	<!--This is the start of the password section. -->
+		<label for="pass">Password</label>
+	<!--Input type for the password is "password" and this section is required for the form to be submitted. -->
+<input type="password" name="pass" id="pass" placeholder="Must have 8 characters" required>
+	</div>
+	<div id="intro-container" class="form-elm">
+		<!--Introductory text starts here. -->
+	<label for="Introductory">Introductory Text</label>
+	<!--Introductory text table consists of a placeholder to indicate what is meant to be put in this space. -->
+	<textarea name="introductory" id="Introductory">
+		Insert introductory text here
+	</textarea>
+	</div>
+		<!--This is the Date of Birth section, -->
+	<div id="bd-container" class="form-elm">
+		<!--This is the label for Birth Date. -->
+		<label for="DateofBirth">Date of Birth</label>
+		<!--The date of birth section is required and has a placeholder to show users how to enter their birth date. -->
+	<input type="date" name="DateofBirth" id="DateofBirth" required>
+</div>
+	<div id="mn-container" class="form-elm">
+	<!--This is the mobile number section. -->
+		<label for="MobileNumber">Mobile Number</label>
+	<!--Mobile number section has a "number" type to ensure only numbers can be entered into the system. -->
+	<input type="Number" name="MobileNumber" id="MobileNumber">
+</div>
+<!--The gender section is using radio buttons so only one button can be selected. -->
+	<div id="radio-container" class="form-elm">
+	<!--The gender section starts here. -->
+			<p>What is your gender?</p>
+		<!--This is the male section. -->
+		<label for="male">
+<input type="radio" name="like-form" id="male" value="male" checked>
+		Male
+	</label>
+	<!--This is the female section. -->
+<label for="female">
+<input type="radio" name="like-form" id="female" value="female" checked>
+	Female
+</label>
+<!--This is the non-binary section. -->
+<label for="non-binary">
+<input type="radio" name="like-form" id="non-binary" value="non-binary" checked>
+	Non-binary
+</label>
+</div>
+<div id="address-container" class="form-elm">
+	<!--The address section starts here. -->
+			<label for="address">Address</label>
+	<!--An address is required in order to submit the form. -->
+<input type="text" name="address" id="address" required>
+	</div>
+<div id="city-container" class="form-elm">
+	<!--The city section starts here. -->
+		<label for="city">City</label>
+		<!--Entering a city is required in order to submit the form. -->
+<input type="text" name="city" id="city" required>
+	</div>
+	<!--The province section is using drop boxes. -->
+		<div id="province-drop-container" class="form-elm">
+					<label for="province">Province</label>
+			<select name="province" id="province">
+				<!--Alberta is the first province. -->
+						<option value="alberta">Alberta</option>
+				<!--Ontario is the second province. -->
+						<option value="ontario">Ontario</option>
+				<!--British Columbia is the third province. -->
+						<option value="british columbia">British Columbia</option>
+				<!--Manitoba is the fourth province. -->
+						<option value="manitoba">Manitoba</option>
+				<!--Newfoundland is the fifth province. -->
+						<option value="newfoundland">Newfoundland</option>
+			</select>
+		</div>
+		<!--This is the country section, which is using drop boxes. -->
+		<div id="country-drop-container" class="form-elm">
+					<label for="country">Country</label>
+			<select name="country" id="country">
+				<!--Canada is the first country. -->
+						<option value="canada">Canada</option>
+				<!--United States is the second country. -->
+						<option value="united-states">United states</option>
+				<!--France is the third country. -->
+						<option value="france">France</option>
+				<!--Portugal is the fourth country. -->
+						<option value="portugal">Portugal</option>
+				<!--Brazil is the fifth country. -->
+						<option value="brazil">Brazil</option>
+			</select>
+		</div>
+<div id="postal-code-container" class="form-elm">
+	<!--This is where the postal code section starts. -->
+			<label for="PostalCode">Postal Code</label>
+	<!--The postal code must be entered in order to submit the form.-->
+	<!--Placeholder indicates how postal code should be submitted. -->
+<input type="text" name="PostalCode" id="PostalCode" placeholder="ex. 000 000" required>
+	</div>
+<div id="hobbies-interests-container" class="form-elm">
+	<!--The hobbies/interests section starts here. -->
+	<p>What are your hobbies or interests?</p>
+	<!--The first hobby is reading. -->
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="hobbies/interests" id="reading" value="reading"> <br>
+	<!--The second hobby is cooking. -->
+					<label for="cooking">Cooking</label>
+					<input type="checkbox" name="hobbies/interests" id="cooking" value="cooking"> <br>
+	<!--The third hobby is skateboarding. -->
+					<label for="skateboarding">Skateboarding</label>
+					<input type="checkbox" name="hobbies/interests" id="skateboarding" value="skateboarding"> <br>
+	<!--The fourth hobby is journaling. -->
+					<label for="journaling">Journaling</label>
+						<input type="checkbox" name="hobbies/interests" id="journaling" value="journaling" checked>
+				</div>
+<div id="website-container" class="form-elm">
+	<!--This is the website url section. -->
+					<label for="website">Website URL</label>
+	<!--The website url is not required. -->
+					<input type="url" id="website" name="website"><br>
+</div>
+<!--This is the form submit button. -->
+<button type="submit">Submit</button>
+<!--This is the form reset button. -->
+<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</html>

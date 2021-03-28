@@ -52,30 +52,27 @@ table {
 	display: table;
 	clear: both;
 }
-
- 
+header {
+	background: #7cc576
+}
+footer {
+	background: #7cc576
+}
+body {
+	background: url(light-grey-terrazzo.png);
+}
 .desktop-nav li {
 	box-sizing: border-box;
-	width: 159px;
-	padding:10%;
-	float: right;
-	color: #7cc576
+	width: 25%;
+	float: left;
+	background: #6dcff6
+	padding: 10%;
 }
 .side-image {
-	height: 208px;
-	width: 282px;
+	width: 20%;
+	padding: 10%
 }
 
 .image-gallery-nav {
-	width: 184px;
-	padding:10%;
-	float:right;
-}
-.side-image {
-}
-.side-container {
-}
-.image-gallery {
-	height: 140px;
-	width: 184px;
-}
+	width: 33%;
+} 

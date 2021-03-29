@@ -59,20 +59,30 @@ footer {
 	background: #7cc576
 }
 body {
-	background: url(light-grey-terrazzo.png);
+	background: url(../img/light-grey-terrazzo.png);
 }
 .desktop-nav li {
-	box-sizing: border-box;
-	width: 25%;
 	float: left;
-	background: #6dcff6
-	padding: 10%;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #6dcff6;
 }
-.side-image {
-	width: 20%;
-	padding: 10%
+.side-image-nav img {
+	padding: 20px;
+	float: right;
+}
+.image-gallery-nav div {
+	width: 33%;
+	padding: 20px;
+	box-sizing:border-box;
+	float: left;
+	display: block;
+}
+.site-header div {
+	float: right;
 }
 
-.image-gallery-nav {
-	width: 33%;
+.logo-nav div{
+	float: right;
 } 

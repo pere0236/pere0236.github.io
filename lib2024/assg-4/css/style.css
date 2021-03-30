@@ -56,33 +56,72 @@ header {
 	background: #7cc576
 }
 footer {
+	padding: 20px;
 	background: #7cc576
 }
 body {
 	background: url(../img/light-grey-terrazzo.png);
 }
-.desktop-nav li {
-	float: left;
-	width: 25%;
-	padding: 10px;
-	box-sizing: border-box;
-	background: #6dcff6;
+h1 {
+position: absolute;
+padding: 10px;
+top: 2%;
+left: 16%;
+box-sizing: border-box;
+font-weight: bold;
+font-size: 35px;
+} 
+h2 {
+width: 65%;
+padding:20px;
+box-sizing: border-box;
+font-size: 25px;
+font-weight: bold;
+} 
+h3 {
+position: absolute;
+top: 61%; 
+right: 11%;
+font-weight: bold;
+font-size: 20px;
+} 
+h4 {
+font-weight:bold;
+font-size: 20px;
+}
+.paragraph-nav p {
+width: 65%;
+padding: 20px;
+box-sizing: border-box;
+}
+.main-nav li {
+width: 25%;
+padding: 10px;
+float: left;
+box-sizing: border-box;
+background: #6dcff6
 }
 .side-image-nav img {
-	padding: 20px;
-	float: right;
+	position: absolute;
+	padding: 65px;
+	top: 20%;
+	left: 70%;
+	box-sizing: border-box;
+}
+.side-image-nav figcaption  {
+	position: absolute;
+	padding: 15px;
+	top: 63%;
+	left: 74%;
+	box-sizing: border-box;
 }
 .image-gallery-nav div {
 	width: 33%;
-	padding: 20px;
+	padding: 5px;
 	box-sizing:border-box;
 	float: left;
 	display: block;
 }
-.site-header div {
-	float: right;
-}
-
 .logo-nav div{
 	float: right;
 } 

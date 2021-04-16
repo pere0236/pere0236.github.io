@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<!--This is the title of the page.-->
 	<title>My Logo</title>
+	<!--This is the google fonts link for the logo.-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
 	<!--This is the style.css styesheet.-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--This is the font.css stylesheet.-->
@@ -93,9 +95,12 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<td>Internet App</td>
 			</tr>
 			</table>
+	<div class="overlay-container loader-container">
+		<div class="loader"></div>
+	</div>
+<h4>EDIT PROFILE</h4>
 <section id="html-forms" class="main-section">
-	<h4>EDIT PROFILE</h4>
-		<form action="somepage.php" method="get">
+		<form id="form" action="submit.php" method="post">
 				<div id="fn-container" class="form-elm">
 			<label for="Name">Name</label>
 <input type="text" name="Name" id="Name" required>
@@ -133,15 +138,26 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 		</div>
 <div id="postal-code-container" class="form-elm">
 		<label for="postal-code">Postal Code</label>
-	<input type="text" name="PostalCode" id="PostCode" required>
-</div>
+	<input type="text" name="PostalCode" id="PostCode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+</div>	
 <!--This is the form submit button. -->
-<button type="submit">Submit</button>
+<button type="submit">Submit <span class="spin-my-circle"></span></button>
 			</form>
 		</section>
-<h5>PROFILE INFO</h5>
+	<div id="results">
+	<h5>PROFILE INFO</h5>
+	<p>Name <span id="name_result"></span>
+	</p>
+	<p>Email<a href="#" id="email_result"></a></p>
+	<p>Address <span id="address_result"></span></p>
+	<p>City <span id="city_result"></span></p>
+	<p>Province <span id="province_result"></span></p>
+	<p>Postal Code <span id="pc_result"></span></p>
+</div>
+
+
 <footer>
-	<section class="col-footer quick-links">
+	<section class="quick-links">
 				<p> QUICK LINKS</p>
 				<nav>
 					<ul>
@@ -160,7 +176,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 					</ul>
 				</nav>
 	</section>
-	<section class="col-footer follow-us">
+	<section class="follow-us">
 				<p>FOLLOW US</p>
 				<nav>
 					<ul>
@@ -176,8 +192,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 					</ul>
 				</nav>
 	</section>
-	<div class="footer-container">
-			<section class="col-footer address">
+			<section class="address">
 				<p>ADDRESS</p>
 				<address>
 					<p>1385 Woodroffe Ave.</p>
@@ -186,5 +201,6 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				</address>
 			</section>
 </footer>
+<script type="text/javascript" src="scripts/form_validation.js"></script>
 </body>
 </html>

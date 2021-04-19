@@ -13,9 +13,39 @@
 </head>
 <body>
 <header class="site-header" id="site-header">
+	<!--This is the site-header that says, "My Logo."-->
 	<div class="logo">My Logo</div>
+	<!--This is where the main nav starts.-->
 	<nav class="main-nav-container desktop-nav">
 			<ul class="main-nav clearfix">
+				<li>
+					<!--This is the home button in the desktop nav.-->
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<!--This is the about button in the desktop nav.-->
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<!--This is the schedule button in the desktop nav.-->
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<!--This is the portfolio button in the desktop nav.-->
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<!--This is the contact button in the desktop nav.-->
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<!--This is where the main nav ends.-->
+		</nav>
+			<div class="ham">Hamburger</div>
+		<!-- mobile navigation start -->
+		<div class="mobile-nav-container">
+			<nav class="main-nav-container mobile-nav">
+			<ul class="main-nav">
 				<li>
 					<a href="home.html">Home</a>
 				</li>
@@ -30,26 +60,41 @@
 				</li>
 				<li>
 					<a href="contact.html">Contact</a>
-				</li>
+				</li>	
 			</ul>
-		</nav>
+			<!--This is where the mobile-nav ends.-->
+			</nav>
+		</div>
 	</header>
-<section class="main-section clearfix">
-	<div class="paragraph-container paragraph-nav">
+	<!-- This is where the main starts -->
+	<main class="main clearfix" id="main">
+		<!-- This is where the site content start -->
+		<article class="col-main site-content">
+			<section class="main-section clearfix">
+				<div class="paragraph-container paragraph-nav">
+		<!--This is the About section in the body on the webpage.-->
 	<h2>ABOUT</h2>
 	<p>
+		<!--This is the first paragraph.-->
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat a erat hendrerit condimentum. Fusce ac scelerisque mi, eget fringilla sem. Morbi feugiat nisl ac orci semper posuere. Moebi ultrices hendrerit nisl a venenatis. Praesent iaculis facilisis sapien eu vestibulum. Vivamus et turpis sed velit pretium viverra. In non lacus aliquam quam fermentum elementum. Duis vestibulum sem tempus nulla maximus pretium. Donec arcu magna, suscipit eu efficitur ut, consectetur sit amet massa. Morbi dapibus sapien ac mattis hendrerit. Donec at purus finibus, volupat nibh elementum, congue leo. Suspendisse nec est sit amet nisl malesuada iaculis eget nec nunc. Mauris eget ultricies leo.
 </p>
 <br>
 <p>
+	<!--This is the second paragraph.-->
 Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante egestas finibus eget a lorem. In lorem mauris, cursus soldales sapien id, tincidunt bibendum sapien. Sed ac nunc id quam porttitor varius sodales aget nulla. Donec tempus dictum dui, sed tristique purus pulvinar quis. Aliquam ultricies tempor pulvinar. Duis ultrices mauris sed mi vestibulum varius. Mauris molestie ut magna et maximus. Vestibulum sodales sapien nec tortor consectetur, imperdiet pulvinar lectus iaculis. Ut libero tellus, blandit vel mattis sed, consectetur id justo. Aliquam quis ante ac dolor iaculis.
 </p>
+</div>
 <div class="side-image-container side-image-nav">
 	<img src="img/pexels-felix-mittermeier-957002.jpg" alt="Town Image">
-</div>
+			</div>
+		</section>
+	</article>
+<aside class="col-main table-content">
+<!--This is the schedule section in the body of the website.-->
 <h3>SCHEDULE</h3>
+	<!--This is the table section.-->
 	<table class="center">
-		<!--This is the information within the table -->
+		<!--These are the headers of the table -->
 			<tr>
 				<th>TIME</th>
 				<th>MONDAY</th>
@@ -58,7 +103,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<th>THURSDAY</th>
 				<th>FRIDAY</th>
 			</tr>
-			<!--This is the first row in the table -->
+			<!--This is the second row in the table -->
 			<tr bgcolor="#D3D3D3">
 				<td>09:00-11:00</td>
 				<td>Communication I</td>
@@ -67,7 +112,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<td>Directed Research Seminar</td>
 				<td>Client Services</td>
 			</tr>
-			<!--This is the second row in the table -->
+			<!--This is the third row in the table -->
 				<tr>
 				<td>11:00-12:30</td>
 				<td>Reference</td>
@@ -76,7 +121,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<td>French</td>
 				<td>Reference</td>
 			</tr>
-			<!--This is the third row in the table -->
+			<!--This is the fourth row in the table -->
 			<tr bgcolor="#D3D3D3">
 				<td>14:00-15:00</td>
 				<td>Acquisition</td>
@@ -85,7 +130,7 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<td>Emerging Library Tech</td>
 				<td>Library Software</td>
 			</tr>
-			<!--This is the fourth row in the table -->
+			<!--This is the fifth row in the table -->
 			<tr>
 				<td>15:30-17:30</td>
 				<td>French</td>
@@ -95,30 +140,38 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<td>Internet App</td>
 			</tr>
 			</table>
+		</aside>
 	<div class="overlay-container loader-container">
 		<div class="loader"></div>
 	</div>
-<h4>EDIT PROFILE</h4>
+	<!--This is the edit profile section in the body of the webpage.-->
 <section id="html-forms" class="main-section">
-		<form id="form" action="submit.php" method="post">
-				<div id="fn-container" class="form-elm">
-			<label for="Name">Name</label>
-<input type="text" name="Name" id="Name" required>
-	</div>
+	<h4>EDIT PROFILE</h4>
+	<form id="form" action="submit.php" method="post">
+	<div id="fn-container" class="form-elm">
+	<!--This is the name section in the edit profile section.-->
+		<label for="Name">Name</label>
+	<input type="text" name="Name" id="Name" required>
+</div>
 	<div id="email-container" class="form-elm">
+	<!--This is the email section in the edit profile section.-->
 		<label for="email">Email</label>
 		<input type="text" name="email" id="email" required>
-	</div>
+</div>
 	<div id="address-container" class="form-elm">
+	<!--This is the address section in the edit profile section.-->
 		<label for="address">Address</label>
 	<input type="text" name="address" id="address" required>
 </div>
-<div id="city-container" class="form-elm">
+	<div id="city-container" class="form-elm">
+	<!--This is the city section in the edit profile section.-->
 		<label for="city">City</label>
 	<input type="text" name="city" id="city" required>
 </div>
-<div id="province-drop-container" class="form-elm">
-					<label for="province">Province</label>
+	<div id="province-drop-container" class="form-elm">
+	<!--This is the province section in the edit profile section.-->
+		<label for="province">Province</label>
+		<!--This is the province dropbox.-->
 			<select name="province" id="province">
 				<!--This is the box that appears in the search engine.-->
 						<option value="select province">Select Province</option>
@@ -135,72 +188,95 @@ Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante ege
 				<!--Nova Scotia is the sixth province.-->
 						<option value="NS">Nova Scotia</option>
 			</select>
-		</div>
-<div id="postal-code-container" class="form-elm">
-		<label for="postal-code">Postal Code</label>
+</div>
+	<div id="postal-code-container" class="form-elm">
+		<!--This is the name postal code in the edit profile section.-->
+		<label for="PostalCode">Postal Code</label>
 	<input type="text" name="PostalCode" id="PostCode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
 </div>	
-<!--This is the form submit button. -->
+		<!--This is the form submit button. -->
 <button type="submit">Submit <span class="spin-my-circle"></span></button>
+		<!--This is where the form ends.-->
 			</form>
 		</section>
 	<div id="results">
+	<!--This is the profile info section.-->
 	<h5>PROFILE INFO</h5>
-	<p>Name <span id="name_result"></span>
-	</p>
+	<!--This is the name section.-->
+	<p>Name <span id="name_result"></span></p>
+	<!--This is the email section.-->
 	<p>Email<a href="#" id="email_result"></a></p>
+	<!--This is the address section.-->
 	<p>Address <span id="address_result"></span></p>
+	<!--This is the city section.-->
 	<p>City <span id="city_result"></span></p>
+	<!--This is the province section.-->
 	<p>Province <span id="province_result"></span></p>
+	<!--This is the postal code section.-->
 	<p>Postal Code <span id="pc_result"></span></p>
 </div>
-
-
+<!--This is the end of the main section.-->
+</main>
+</body>
 <footer>
-	<section class="quick-links">
+	<div class="footer-container">
+	<section class="col-footer quick-links">
+		<!--This is the Quick Links section.-->
 				<p> QUICK LINKS</p>
 				<nav>
 					<ul>
 						<li>
+							<!--This is the schedule link.-->
 							<a href="schedule.html">SCHEDULE</a>
 						</li>
 						<li>
+							<!--This is the bout link.-->
 							<a href="about.html">About</a>
 						</li>
 						<li>
+							<!--This is the portfolio link.-->
 							<a href="portfolio.html">PORTOLIO</a>
 						</li>
 						<li>
+							<!--This is the contact link.-->
 							<a href="contact.html">CONTACT</a>
 						</li>
 					</ul>
 				</nav>
 	</section>
-	<section class="follow-us">
+	<section class="col-footer follow-us">
+		<!--This is the Follow Us section.-->
 				<p>FOLLOW US</p>
 				<nav>
 					<ul>
 						<li>
-							<img src="img/facebook.png">
+							<!--This is the Facebook link.-->
+							<img src="img/facebook.png" alt="Facebook Image">
 						</li>
 						<li>
-							<img src="img/youtube.png">
+							<!--This is the Youtube link.-->
+							<img src="img/youtube.png" alt="Youtube Image">
 						</li>
 						<li>
-							<img src="img/twitter.png">
+							<!--This is the Twitter link.-->
+							<img src="img/twitter.png" alt="Twitter Image">
 						</li>
 					</ul>
 				</nav>
 	</section>
-			<section class="address">
+			<section class="col-footer address">
+				<!--This is the address section.-->
 				<p>ADDRESS</p>
 				<address>
+					<!--This is the street address in the address section.-->
 					<p>1385 Woodroffe Ave.</p>
+					<!--This is the city, province, and postal code located in the address section.-->
 					<p>Nepean, ON K2G 1V8</p>
+					<!--This is the country located in the address section.-->
 					<p>Canada</p>
 				</address>
 			</section>
+		</div>
 </footer>
-<script type="text/javascript" src="scripts/form_validation.js"></script>
-</body>
+<script src="scripts/scripts.js"></script>
 </html>

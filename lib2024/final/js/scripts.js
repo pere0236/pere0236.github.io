@@ -1,7 +1,7 @@
 window.onload = init;
 function init(){
 
-$("form").submit(function(event){
+$("form").submit(function(){
 
 });
 

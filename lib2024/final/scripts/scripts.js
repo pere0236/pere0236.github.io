@@ -12,7 +12,7 @@ $("#results").removeClass('reveal');
 	console.log(this);
 	$(".overlay-container").fadeIn(1000, function(){
 		showformValues(form);
-		$('.overlay-container')delay(500).fadeOut(500)
+		$('.overlay-container')delay(500).fadeOut(500);
 	$("#results").addClass('reveal');
 })
 });

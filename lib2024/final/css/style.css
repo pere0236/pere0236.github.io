@@ -58,7 +58,6 @@ body {
 footer {
 		background: #3D3D3D;
 		width: 100%;
-		box-sizing: border-box;
 	}
 /*This is the styling for the table that is titled schedule.--*/
 table, th, td {
@@ -69,6 +68,8 @@ table, th, td {
 h1 {
 	padding: 20px;
 	font-family: 'Lobster', cursive;
+	color: #72a9ae;
+	font-size: 24px;
 }
 /*This is the styling for the header of the About section.*/
 h2 {
@@ -111,11 +112,6 @@ p {
 	font-family: 'open_sansregular', sans-serif;
 	padding: 10px;
 }
-/*This is the styling to center the table titled, "Schedule."*/
-.center {
-	margin-left: 25%;
-	margin-right: 25%;
-}
 /*This is the styling for the town image located at the side of the webpage.*/
 .side-image-container {
 	padding: 15px;
@@ -129,10 +125,9 @@ padding: 5px;
 float: left;
 box-sizing: border-box;
 }
-/*This is the styling for the background of the navigation bar.*/
+/*This is the styling for the width of the navigation bar.*/
 .desktop-nav ul {
 	width:100%;
-	background: #72a9ae;
 }
 /*This is the styling for the navigation bar.*/
 .desktop-nav li{
@@ -140,24 +135,39 @@ box-sizing: border-box;
 	float: left;
 	padding: 10px;
 	width: 13%;
+	background: #72a9ae;
+}
+/*This is the styling for the transition of the navigation bar.*/
+.desktop-nav li a {
+	color: #000;
+	transition: all .3s;
+}
+/*This is the styling for the transition of the navigation bar.*/
+.desktop-nav li a:hover {
+	font-weight: bold;
+	font-size: 18px;
 }
 /*This is the styling for the quick links section located in the footer.*/
 .quick-links {
 float: left;
-padding: 10px;
-width:33%;
+padding: 5px;
+width: 25%;
 }
 /*This is the styling for the follow us section located in the footer.*/
 .follow-us {
 	float: left;
-	padding: 10px;
-	width: 33%;
+	padding: 5px;
+	width: 25%;
 }
 /*This is the styling for the address section located in the footer.*/
 .address {
 	float: left;
-	padding: 10px;
-	width: 33%;
+	padding: 5px;
+	width: 25%;
+}
+/*This is the styling for the social media logos.*/
+.col-footer img {
+	float: left;
 }
 /*This is the overlay conatiner for the animation that appears when the form is submitted.*/
 .overlay-container {
@@ -216,45 +226,10 @@ form {
 		border-top-color: #73db9b;
 	}
 }
-/*This is the styling for the mobile webpage.*/
-/*This is the min and max width of the webpage.*/
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	header {
-		background: #72a9ae;;
-	}
-}
-@media only screen and (min-width: 768px) {
-	header, main, footer {
-
-		max-width: 1280px;
-		margin: 0 auto;
-	}
-/*This is the styling to block the desktop-nav.*/
-.desktop-nav {
-		display: block;
-	}
-/*This is the styling for the mobile nav.*/
-.mobile-nav {
-		display: none;
-	}
-/*This is the styling for the hamburger.*/
-.ham {
-		display: none;
-	}
-/*This is the styling for the body content of the webpage.*/
-.site-content {
-		float: left;
-		width: 50%;
-		box-sizing: border-box;
-	}
-/*This is the styling for the footer of the mobile webpage.*/
-.col-footer {
-		width: 31%;
-		box-sizing: border-box;
-		margin: 0 1%;
-		padding: 10px;
-		text-align: center; 
-		background: #3D3D3D;
+/*This is the max width and styling of the webpage.*/
+@media only screen and (max-width: 768px) {
+	.paragraph-nav, .side-image-container {
 		width: 100%;
+		float: none;
 	}
 }
